@@ -29,11 +29,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.ejs',
-            minify: {
-                removeComments: true,
-                collapseWhitespace: true,
-                removeAttributeQuotes: true
-            },
         }),
     ],
 };
