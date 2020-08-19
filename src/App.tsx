@@ -5,7 +5,7 @@ interface IProps {
 }
 
 class App extends React.Component<IProps, {}> {
-  render () {
+  render() {
     return (
       <div>
         <h1>Welcome to React + Typescript</h1>
@@ -14,6 +14,5 @@ class App extends React.Component<IProps, {}> {
     );
   }
 }
-
 
 export default App;

@@ -19,7 +19,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "css-loader": "4.2.1",
+    "html-webpack-plugin": "4.3.0",
     "node-sass": "4.14.1",
     "prettier": "2.0.5",
     "sass-loader": "9.0.3",

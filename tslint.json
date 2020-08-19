@@ -1,19 +1,31 @@
 {
-    "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended"
-    ],
-    "jsRules": {},
+    // "defaultSeverity": "error",
+    "extends": ["tslint:latest", "tslint-react", "tslint-plugin-prettier", "tslint-config-prettier"],
     "rules": {
+        "prettier": [true, { "singleQuote": true }],
+        "arrow-parens": true,
+        "curly": true,
+        "class-name": true,
+        "no-console": [true, "warning"],
         "no-unused-expression": true,
         "no-duplicate-variable": true,
-        "class-name": true,
+        "no-debugger": true,
         "no-construct": true,
+        "no-implicit-dependencies": false,
         "no-var-keyword": true,
         "no-duplicate-super": true,
+        "no-empty": true,
+        "no-eval": true,
+        "no-non-null-assertion": true,
+        "no-require-imports": false,
+        "no-var-requires": false,
+        "no-unused-variable": true,
+        "object-literal-sort-keys": {
+            "options": "shorthand-first"
+        },
+        "one-variable-per-declaration": [true, "ignore-for-loop"],
+        "ordered-imports": [true, {"import-sources-order": "lowercase-last", "named-imports-order": "lowercase-first"}],
         "switch-default": true,
-
-
-    },
-    "rulesDirectory": []
+        "unified-signatures": true
+    }
 }
